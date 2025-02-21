@@ -88,7 +88,9 @@ export default function MainLayout({
 					<Divider />
 					<List>
 						<ListItemButton
-							selected={pathname === "/dashboard"}
+							selected={
+								pathname === "/dashboard" || pathname === "/"
+							}
 							onClick={() => router.push("/dashboard")}
 						>
 							<ListItemIcon>

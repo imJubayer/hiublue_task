@@ -4,9 +4,10 @@ import { Grid } from "@mui/material";
 
 type CardsPropsType = {
 	weekData: DashboardData | undefined;
+	week?: string;
 };
 
-export default function Cards({ weekData }: CardsPropsType) {
+export default function Cards({ weekData, week }: CardsPropsType) {
 	return (
 		<Grid container spacing={3} sx={{ marginTop: 3 }}>
 			<Grid item xs={12} sm={6} md={4}>
@@ -17,7 +18,7 @@ export default function Cards({ weekData }: CardsPropsType) {
 							? parseInt(weekData.active_users, 10) / 1000
 							: 0
 					}k`}
-					subtitle="Last month"
+					subtitle={week?.toUpperCase()}
 				/>
 			</Grid>
 			<Grid item xs={12} sm={6} md={4}>
@@ -28,7 +29,7 @@ export default function Cards({ weekData }: CardsPropsType) {
 							? parseInt(weekData.clicks, 10) / 1000
 							: 0
 					}k`}
-					subtitle="Last month"
+					subtitle={week?.toUpperCase()}
 				/>
 			</Grid>
 			<Grid item xs={12} sm={6} md={4}>
@@ -39,7 +40,7 @@ export default function Cards({ weekData }: CardsPropsType) {
 							? parseInt(weekData.appearance, 10) / 1000
 							: 0
 					}k`}
-					subtitle="Last month"
+					subtitle={week?.toUpperCase()}
 				/>
 			</Grid>
 		</Grid>

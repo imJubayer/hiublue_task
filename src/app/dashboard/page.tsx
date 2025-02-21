@@ -176,7 +176,7 @@ export default function Dashboard() {
 					</TextField>
 				</Grid>
 			</Grid>
-			<Cards weekData={weekData} />
+			<Cards weekData={weekData} week={filter} />
 
 			<Grid container spacing={3} sx={{ marginTop: 3 }}>
 				{/* Bar Chart Card */}

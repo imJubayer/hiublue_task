@@ -135,7 +135,7 @@ const CreateOfferForm = () => {
 					<Stack>
 						<Typography variant="h5">Create Offer</Typography>
 						<Typography variant="caption">
-							Send onboarding offer to new clinet
+							Send onboarding offer to new client
 						</Typography>
 						<Divider sx={{ my: 1 }} />
 					</Stack>
