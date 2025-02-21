@@ -1,0 +1,45 @@
+{
+  "name": "hiublue-frontend-recruitment",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && pnpm update --latest"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@hookform/resolvers": "^4.1.0",
+    "@iconify/react": "^5.2.0",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.4",
+    "@mui/material-nextjs": "next",
+    "@mui/x-data-grid": "^7.27.0",
+    "apexcharts": "^4.5.0",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.2",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/lodash": "^4.17.15",
+    "@types/node": "latest",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "latest",
+    "eslint-config-next": "^15.0.0",
+    "typescript": "latest"
+  }
+}
